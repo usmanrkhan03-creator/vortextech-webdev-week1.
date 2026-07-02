@@ -1,0 +1,259 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#333;
+}
+
+/* Navigation */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+position:sticky;
+top:0;
+}
+
+nav h2{
+
+color:#0F4C81;
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#333;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+
+color:#0F4C81;
+
+}
+
+/* Hero */
+
+header{
+
+height:90vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#0F4C81,#125478);
+
+color:white;
+
+padding:20px;
+text-align:center;
+
+}
+
+.hero{
+
+max-width:800px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+margin-bottom:10px;
+
+}
+
+.hero h3{
+
+font-size:28px;
+font-weight:400;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:14px 35px;
+
+background:white;
+color:#0F4C81;
+
+text-decoration:none;
+font-weight:bold;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#333;
+color:white;
+
+}
+
+/* Sections */
+
+main{
+
+width:85%;
+margin:auto;
+
+padding:70px 0;
+
+}
+
+section{
+
+margin-bottom:70px;
+
+}
+
+h2{
+
+font-size:35px;
+margin-bottom:20px;
+color:#0F4C81;
+
+}
+
+section p{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+/* Skills */
+
+.skills{
+
+display:flex;
+flex-wrap:wrap;
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+.skills span{
+
+background:#0F4C81;
+color:white;
+
+padding:12px 20px;
+
+border-radius:25px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.skills span:hover{
+
+background:#4DA8DA;
+transform:translateY(-4px);
+
+}
+
+/* Contact */
+
+.contact-info p{
+
+margin:12px 0;
+font-size:18px;
+
+}
+
+/* Footer */
+
+footer{
+
+background:#0F4C81;
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+gap:15px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h3{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+main{
+
+width:92%;
+
+}
+
+}
